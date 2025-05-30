@@ -30,4 +30,4 @@ jobs:
      - name: list all files
        run: ls -la
      - name: run ansible script 
-       run: ansible-playbook -i ansible/hosts.ini ansible/playbook.yml
+       run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i ansible/hosts.ini ansible/playbook.yml
