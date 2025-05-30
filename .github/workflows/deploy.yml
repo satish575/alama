@@ -25,7 +25,7 @@ jobs:
      - name: setup ssh key
        run: | 
            echo "${{ secrets.SSH_KEY }}" > id_ec2.pem
-           chmod 400 id_ec2.pem"
+           chmod 400 id_ec2.pem
      
      - name: run ansible script 
        run: ansible-playbook -i ansible/hosts.ini ansible/playbook.yml
