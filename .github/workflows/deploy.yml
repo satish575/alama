@@ -21,7 +21,8 @@ jobs:
     steps:
      - name: install ansible
        run : sudo apt update && sudo apt install ansible -y
-    
+     - name: checkout 
+       uses: actions/checkout@v2
      - name: setup ssh key
        run: | 
            echo "${{ secrets.SSH_KEY }}" > id_ec2.pem
