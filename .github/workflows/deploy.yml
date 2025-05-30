@@ -28,5 +28,5 @@ jobs:
            chmod 400 id_ec2.pem
      
      - name: run ansible script 
-       working-directory: alama
-       run: ansible-playbook -i ansible/hosts.ini ansible/playbook.yml
+       working-directory: ansible
+       run: ansible-playbook -i hosts.ini playbook.yml
