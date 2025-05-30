@@ -30,4 +30,4 @@ jobs:
      - name: list all files
        run: ls -la
      - name: run ansible script 
-       run: ansible-playbook -i hosts.ini playbook.yml
+       run: ansible-playbook -i ansible/hosts.ini ansible/playbook.yml
