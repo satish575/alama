@@ -1,2 +1,1 @@
-# alama
-this is a demo project
+# (ALAMA) GITHUB ACTION CI / CD PIPELINE

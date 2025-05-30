@@ -1,0 +1,13 @@
+name: Alama node js deployment
+
+on:
+  push:
+    branches:
+        - main
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: print hello world
+        run: echo "hello world running on ${{ runner.os }} and repository is ${{ github.repository }}"
