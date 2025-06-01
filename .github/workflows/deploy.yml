@@ -27,7 +27,5 @@ jobs:
        run: | 
            echo "${{ secrets.SSH_KEY }}" > id_ec2.pem
            chmod 400 id_ec2.pem
-     - name: list all files
-       run: ls -la
      - name: run ansible script 
        run: ANSIBLE_HOST_KEY_CHECKING=False ansible-playbook -i ansible/hosts.ini ansible/playbook.yml
